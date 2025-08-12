@@ -1,0 +1,44 @@
+{
+  "name": "woocommerce-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for WooCommerce WordPress website management",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "watch": "tsx watch src/server.ts",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.2",
+    "@google/generative-ai": "^0.12.0",
+    "wordpress-api": "^1.0.0",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7",
+    "dotenv": "^16.3.1",
+    "chokidar": "^3.5.3",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.2.0",
+    "tsx": "^4.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "woocommerce",
+    "wordpress",
+    "ai",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
